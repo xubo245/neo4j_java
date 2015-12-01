@@ -5,15 +5,22 @@ neo4j、java、Cypher
 search by cypher 
 examples:
 1.select all nodes and return nodes:
+
 start n=node() return n;
+
 2.select all relationships and return relationships :
+
 start n=node() match (n)-[r]->() return r;
 
+
 instance:
+
 search from target/neo4j-store database(create by examples/EmbeddedNeo4jWithIndexing.java)
 
 result:
+
 hello neo4j log
+
 +---------------------------------------+
 | n |
 +---------------------------------------+
@@ -43,7 +50,9 @@ hello neo4j log
 
 | Node[99]{username:"user99@neo4j.org"} |
 +---------------------------------------+
+
 100 rows
+
 
 +---+
 | r |
